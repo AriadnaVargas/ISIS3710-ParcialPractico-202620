@@ -18,9 +18,9 @@ export default function UserMenu() {
   if (session.id) {
     return (
       <div className="flex items-center gap-6">
-        <div className="bg-blue-600 text-white text-lg font-semibold rounded-xl px-6 py-3 cursor-pointer">
+        <Link href="/createPlans" className="bg-blue-600 text-white text-lg font-semibold rounded-xl px-6 py-3 cursor-pointer">
           + Crear Plan
-        </div>
+        </Link>
         <div className="flex items-center gap-3 border-l border-slate-200 pl-6">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -39,6 +39,7 @@ export default function UserMenu() {
           <span className="text-lg text-slate-700">{session.username}</span>
         </div>
         <button onClick={handleLogout} className="text-slate-500">
+           
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -53,6 +54,7 @@ export default function UserMenu() {
               d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15m3 0 3-3m0 0-3-3m3 3H9"
             />
           </svg>
+          Cerrar sesión
         </button>
       </div>
     );

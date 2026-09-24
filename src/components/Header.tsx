@@ -21,6 +21,7 @@ export default function Header() {
         <Link href="/plans" className="text-lg font-semibold text-blue-700">
           Explorar Planes
         </Link>
+
       </div>
 
       {/* key={pathname} hace que el menú se vuelva a cargar al cambiar de página,
